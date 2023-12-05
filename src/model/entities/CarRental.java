@@ -1,4 +1,4 @@
-package seminterface.model.entities;
+package model.entities;
 
 import java.time.LocalDateTime;
 
@@ -12,7 +12,6 @@ public class CarRental {
     this.start = start;
     this.finish = finish;
     this.vehicle = vehicle;
-    this.invoice = invoice;
   }
 
   public LocalDateTime getStart() {

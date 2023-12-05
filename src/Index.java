@@ -1,13 +1,13 @@
-package seminterface;
+
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-import seminterface.model.entities.CarRental;
-import seminterface.model.entities.Vehicle;
-import seminterface.model.services.BrazilTaxService;
-import seminterface.model.services.RentalService;
+import model.entities.CarRental;
+import model.entities.Vehicle;
+import model.services.BrazilTaxService;
+import model.services.RentalService;
 
 public class Index {
   public static void main() {
@@ -35,7 +35,7 @@ public class Index {
 
   
     System.out.println("FATURA:");
-    System.out.println("Pagamento básico: " + String.format(".2f", cr.getInvoice().getBasicPayment()));
+    System.out.println("Pagamento básico: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
     System.out.println("Imposto: "+ String.format("%.2f", cr.getInvoice().getTax()));
     System.out.println("Pagamento total: "+ String.format("%.2f", cr.getInvoice().getTotalPayment()));
 
