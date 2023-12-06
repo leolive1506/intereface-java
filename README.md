@@ -34,3 +34,11 @@
 # Herança multipla e o problema do diamente
 - Uma ambiguidade causada pela existência do mesmo método em mais de uma superclasse
 - ![Alt text](image.png)
+
+# Interface Comprable
+```java
+// objeto o do tipo T
+public interface Comparable<T> {
+  int compareTo(T o);
+}
+```
