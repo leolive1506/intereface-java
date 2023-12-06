@@ -10,14 +10,14 @@ public class Contract {
   private LocalDate date;
   private Double totalValue;
 
-  private List<Installment> installments;
+  private List<Installment> instalments;
 
   public Contract(Integer number, Integer months, LocalDate date, Double totalValue) {
     this.number = number;
     this.months = months;
     this.date = date;
     this.totalValue = totalValue;
-    installments = new ArrayList<>();
+    instalments = new ArrayList<>();
   }
 
   public Integer getNumber() {
@@ -49,14 +49,14 @@ public class Contract {
   }
 
   public List<Installment> getInstallments() {
-    return installments;
+    return instalments;
   }
 
   public void addInstallment(Installment installment) {
-    installments.add(installment);
+    instalments.add(installment);
   }
 
   public void removeInstallment(Installment installment) {
-    installments.remove(installment);
+    instalments.remove(installment);
   }
 }
