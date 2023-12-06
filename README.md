@@ -21,3 +21,16 @@
   - classe instanciação (builer, factory)
   - Container / framework
 
+# Herdar vs cumprir contrato
+- Aspectos com uns
+  - relação é um
+  - generalização -> especialização
+  - polimorfismo
+
+# Diferença
+- **Herança** -> reuso
+- **Interface** -> contrato a ser cumprido
+
+# Herança multipla e o problema do diamente
+- Uma ambiguidade causada pela existência do mesmo método em mais de uma superclasse
+- ![Alt text](image.png)
