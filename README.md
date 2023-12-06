@@ -1,18 +1,23 @@
-## Getting Started
+# Aviso
+- a partir java 8
+  - intefaces podem ter "default methods" ou "defender methods"
+- Isso possui implicações conceituais e práticas
+- Classicamente não tem implementação de metodos, só que atualmente podem ter
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Interface
+- Como se fosse
+  - classe abstrada com metodos abstratos
+- Estabelece um contrato que uma classe deve cumprir
+- Serve pra criar sistemas com baixo acomplamento e flexiveis
 
-## Folder Structure
+# Inversão de controle
+- padrão de desenvolvimento que consiste em retirar da classe a responsabilidade de instanciar suas depedências
 
-The workspace contains two folders by default, where:
+# Injeção de depencia
+- uma forma de realizar inversão de controle
+- um componente externo instancia a dependencia que é então injetada no objeto pai
+- implementada de várias formas:
+  - construtor
+  - classe instanciação (builer, factory)
+  - Container / framework
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
